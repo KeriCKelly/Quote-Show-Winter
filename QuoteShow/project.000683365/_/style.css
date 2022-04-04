@@ -1,0 +1,82 @@
+/* Stylesheet */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body {  
+  /* Horizontal and Vertical Center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  /* Extend full height of browser  */
+  height: 100vh;
+  
+  /* Load Background Images with JS. Style with CSS */ 
+  background-size: cover;
+}
+
+h1 {
+  margin: 5vmin;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3vmin;
+  width: 100%;
+  align-self: flex-start;
+}
+/* edit arrows */
+.prev {
+  width: 0;
+  height: 0;
+  border-top: 3vmin solid transparent;
+  border-right: 4vmin solid #ffffff69;
+  border-bottom: 3vmin solid transparent;
+}
+.random {
+  width: 6vmin;
+    height: 6vmin;
+    background: black;
+    border-radius: 50%;
+    background-image: url(assets/PopeEyes.jpg);
+    background-size: contain;
+}
+.next {
+  width: 0;
+  height: 0;
+  border-top: 3vmin solid transparent;
+    border-left: 4vmin solid #ffffff69;
+    border-bottom: 3vmin solid transparent;
+}
+/* arrow bar location */
+nav {
+  
+}
+/* Apply Font */
+main {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5vmin;
+  text-align: center;
+  
+  /* Add contrast to text */
+  background: #ebebeb82;
+  border-radius: 8vmin;
+  margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* animate emogi */
+.emogianimate {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: exponential; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
